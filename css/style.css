@@ -21,6 +21,12 @@ body{
     transition : 0.5s; 
 }
 
+.btn-standard:hover{
+    cursor : pointer;
+    background-color : black;
+
+}
+
 /*Travail sur la barre de navigation */
 
 nav{
@@ -96,10 +102,6 @@ header .text-title p{
     font-size : 1rem;
 }
 
-header .text-title button:hover{
-    background-color : black;
-    cursor: pointer; 
-}
 
 /* Fin du travail sur le header */
 
@@ -150,11 +152,109 @@ header .text-title button:hover{
 }
 
 
-
-
-
-
-
-
-
 /* Fin du travail sur la section best-menus*/
+
+/* Début du travail sur la section burger-beef-promo */
+
+.promo-burger {
+    background-image : linear-gradient(rgba(139,0,0,0.3), rgba(139,0,0,0.4)),
+    url(../images/promo-burger/promo-burger.jpg);
+    background-size : cover;
+    background-repeat: no-repeat;
+    padding : 120px;
+}
+
+.promo-burger .burger-beef-promo{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    text-align : center;
+    color : white;
+}
+
+.promo-burger .burger-beef-promo h2{
+    text-transform: uppercase;
+    font-weight : bolder;
+    font-size: 3rem;
+}
+
+.promo-burger .burger-beef-promo p{
+    margin : 30px auto;
+}
+
+/* Fin du travail sur la section burger-beef-promo */
+
+/* Début du travail sur la section burger-map */
+
+.burger-map{
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+    margin : 100px auto;
+}
+
+.burger-map .map{
+    border : 2px solid lightgrey;
+    border-radius : 10px;
+}
+
+.burger-map .map iframe{
+    border-radius : 10px;
+}
+
+.burger-map .best-menus-text p{
+    margin : 30px auto;
+}
+
+.burger-map .bottom-map{
+    display : flex;
+    justify-content : space-between;
+    align-items: center;
+    border-radius : 10px;
+}
+
+.burger-map .bottom-map:hover{
+    cursor: pointer;
+    color : white;
+    background-color : orangered;
+}
+
+.burger-map .bottom-map:hover .bottom-contact .bottom-command {
+    color : black;
+}
+
+.burger-map .bottom-map:hover .bottom-contact .bottom-command:hover{
+    padding : 15px;
+    color : white;
+    background-color : black;
+    border-radius : 10px;
+    transition : 0.5s;
+}
+
+
+.burger-map .bottom-title{
+    margin-left : 50px;
+}
+
+.burger-map .bottom-map .bottom-contact{
+    display : flex;
+    justify-content : space-evenly;
+    align-items: center;
+    margin-right : 30px;
+}
+
+.burger-map .bottom-map .bottom-contact i{
+    margin : 5px auto;
+}
+
+.burger-map .bottom-map .bottom-contact .bottom-command{
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+    margin : 5px 20px;
+    color : orangered;
+}
+
+/* Fin du travail sur la section burger-map */
